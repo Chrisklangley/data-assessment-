@@ -79,7 +79,7 @@ module.exports = {
                 city_id SERIAL PRIMARY KEY,
                 name VARCHAR,
                 rating INT,
-                country_id NOT NULL REFERENCE countries(country_id)
+                country_id INT REFERENCES countries(country_id)
 
 
             );
